@@ -5,14 +5,14 @@
         static void Main(string[] args)
         {
             var random = new Random();
-            var number = random.Next(1, 10); // Picks a number between 1-100 for you to guess!
+            var number = random.Next(1, 100); // Picks a number between 1-100 for you to guess!
             var attempts = 0; //How many times you used to guess the number.
             var myGuess = 0; //The number I have guessed.
 
             Console.WriteLine("Hei\nVelkommen til gjetteleken!");
             do
             { 
-                Console.Write("Gjett et tall fra 1 til 10: ");
+                Console.Write("Gjett et tall fra 1 til 100: ");
                 myGuess = Convert.ToInt32(Console.ReadLine());
                 attempts++;
 
